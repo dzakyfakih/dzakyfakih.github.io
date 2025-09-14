@@ -44,7 +44,7 @@ main, section.content {
   text-align: center;
   padding: 80px 20px;   /* tambahin tinggi hero biar seimbang */
   color: white;
-  min-height: 60vh;     /* hero section menyesuaikan tinggi layar */
+  min-height: 70vh;     /* hero section menyesuaikan tinggi layar */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,6 +120,23 @@ ul {
   padding: 15px;
   border-radius: 8px;
 }
+/* Pastikan body memenuhi layar */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gunakan flexbox agar footer selalu di bawah */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bagian utama konten akan dorong footer ke bawah */
+main {
+  flex: 1;
+}
 
 /* Footer */
 footer {
@@ -127,5 +144,4 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 30px;
 }
